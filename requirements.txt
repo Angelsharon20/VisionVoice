@@ -1,0 +1,21 @@
+# Core ML  (use `tensorflow` instead of `tensorflow-cpu` if you have an NVIDIA GPU)
+tensorflow-cpu>=2.17,<3
+numpy>=1.26
+nltk>=3.8            # BLEU scores in train.py
+
+# Dashboard
+streamlit>=1.55
+plotly>=5.20
+pandas>=2.0
+pillow>=10.0
+opencv-python-headless>=4.9
+
+# Live camera from a phone / laptop browser (optional but recommended)
+streamlit-webrtc>=0.60
+av>=12.0
+
+# Local text-to-speech (offline). Linux also needs:  sudo apt install espeak-ng
+pyttsx3>=2.90
+
+# Dev
+pytest>=8.0

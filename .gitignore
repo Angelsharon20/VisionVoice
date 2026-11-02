@@ -1,0 +1,38 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- IDE / OS ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Dataset (Flickr8k is licensed separately; never commit it) ---
+data/*
+!data/.gitkeep
+!data/flickr8k/
+data/flickr8k/*
+!data/flickr8k/.gitkeep
+
+# --- Generated artefacts: weights, caches, metrics ---
+outputs/*
+!outputs/.gitkeep
+*.keras
+*.h5
+*.weights.h5
+*.npz
+
+# --- Secrets / local config ---
+.env
+.streamlit/secrets.toml
